@@ -17,7 +17,7 @@ public class Handcode {
 
         Core.data_structure_version_core = 1;
         Core.data_structure_version_mod = "1.8.0";
-        Core.data_structure_version_pack = "20251216";
+        Core.data_structure_version_pack = "1.8.0";
         Core.tanny_pack_type = "Beta";
 
         Core.mod_name = "Tan's Huge Trees";
@@ -411,7 +411,10 @@ public class Handcode {
                     Core.logger.info("Running config data migration for failed condition");
                     FileManager.delete(Core.path_config + "/#dev");
                     FileManager.rename(Core.path_config + "/custom_packs/THT-tree_pack-main", "#TannyJung-Main-Pack");
+                    FileManager.rename(Core.path_config + "/custom_packs/THT-tree_pack-wip", "#TannyJung-Main-Pack");
                     FileManager.rename(Core.path_config + "/custom_packs/TannyJung-Main-Pack", "#TannyJung-Main-Pack");
+                    FileManager.rename(Core.path_config + "/custom_packs/[INCOMPATIBLE] THT-tree_pack-wip", "#TannyJung-Main-Pack");
+                    FileManager.rename(Core.path_config + "/custom_packs/[INCOMPATIBLE] #TannyJung-Main-Pack", "#TannyJung-Main-Pack");
 
                 }
 
